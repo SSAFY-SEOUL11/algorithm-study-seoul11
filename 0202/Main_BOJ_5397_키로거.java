@@ -2,8 +2,9 @@ import java.io.*;
 import java.util.*;
 
 public class Main_BOJ_5397_키로거 {
+	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	static BufferedWriter bw= new BufferedWriter(new OutputStreamWriter(System.out));
 	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int T = stoi(br.readLine());
 		for (int i = 0; i < T; i++) {
 			Deque<Character> pw = new ArrayDeque<Character>();
@@ -27,6 +28,7 @@ public class Main_BOJ_5397_키로거 {
 						break;
 					}
 					case '-':
+//						if(pw.isEmpty()) break;
 						pw.removeLast();
 						break;
 					}
@@ -34,13 +36,15 @@ public class Main_BOJ_5397_키로거 {
 					pw.addLast(c);
 				}
 			}
-			StringBuilder sb = new StringBuilder();
+			
 			while (!wait.isEmpty())
 				pw.addLast(wait.removeFirst());
 			while (!pw.isEmpty())
-				sb.append(pw.removeFirst());
-			System.out.println(sb);
+				bw.append(pw.removeFirst()+"");
+			bw.append("\n");
 		}
+		bw.flush();
+		bw.close();
 	}
 
 	private static int stoi(String input) {
