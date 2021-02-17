@@ -1,4 +1,4 @@
-package mon2.day17.boj_택배;
+package mon2.day16.boj_택배;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

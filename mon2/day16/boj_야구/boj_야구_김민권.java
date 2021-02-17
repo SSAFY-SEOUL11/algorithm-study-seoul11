@@ -1,4 +1,4 @@
-package mon2.day17.boj_야구;
+package mon2.day16.boj_야구;
 
 import java.io.*;
 import java.util.*;
