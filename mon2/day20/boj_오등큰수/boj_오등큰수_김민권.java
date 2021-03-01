@@ -1,4 +1,4 @@
-package mon2.day22.boj_오등큰수;
+package mon2.day20.boj_오등큰수;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

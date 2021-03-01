@@ -1,4 +1,4 @@
-package mon2.day22.boj_구슬탈출4;
+package mon2.day20.boj_구슬탈출4;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
