@@ -1,4 +1,4 @@
-package mon03.day9_boj_미친아두이노;
+package mon03.day9_boj.미친아두이노;
 
 import java.io.BufferedReader;
 import java.io.IOException;
