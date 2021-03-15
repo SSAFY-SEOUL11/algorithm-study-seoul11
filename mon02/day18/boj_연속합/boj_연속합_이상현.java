@@ -46,7 +46,7 @@ public class boj_연속합_이상현 {
 		int mid = (left+right) / 2;
 		int leftSum = maxSubSet(left, mid); // 왼쪽에 최대 부분 배열이 있다
 		int rightSum = maxSubSet(mid + 1, right);
-		int crossSum = maxCross(left, right);
+		int crossSum = maxCross(left, right); // mid를 기준으로 left,right 걸쳐있는 부분배열
 			
 		return Math.max(leftSum, Math.max(rightSum, crossSum));
 	}

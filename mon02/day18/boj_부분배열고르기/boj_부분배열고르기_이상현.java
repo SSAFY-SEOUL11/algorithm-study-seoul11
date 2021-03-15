@@ -31,7 +31,6 @@ public class boj_부분배열고르기_이상현 {
 		
 		System.out.println("left right mid " + left + " " + right + " " + mid);
 		
-		
 		while(true) {
 			if(i < left && j > right) break;
 			
@@ -40,7 +39,6 @@ public class boj_부분배열고르기_이상현 {
 				leftMin = Math.min(arr[i], leftMin);
 				i--;
 			}
-			
 			
 			if(j <= right) {
 				rightSum += arr[j];
